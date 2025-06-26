@@ -1,6 +1,86 @@
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+        format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
 body {
     background-color: rgb(160, 87, 87);
+    font-family: Phantom Sans, sans-serif;
+    text-align: center;
 }
+h1 {
+    color: rgb(244, 244, 244);
+    font-size: 100px;
+}
+
+#animated-text span {
+    z-index: 0;
+    display: inline-block;
+    animation: bounce 1s infinite ease-in-out;
+    transition: opacity 0.3s;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+#animated-text span:hover {
+    opacity: 0.65;
+}
+#animated-text {
+    opacity: 0;
+}
+#animated-text.loaded {
+    cursor: pointer;
+    opacity: 1 !important;
+    transition: opacity 1s;
+}
+
+#animated-text span:nth-child(1) { animation-delay: 0s; }
+#animated-text span:nth-child(2) { animation-delay: 0.1s; }
+#animated-text span:nth-child(3) { animation-delay: 0.2s; }
+#animated-text span:nth-child(4) { animation-delay: 0.3s; }
+#animated-text span:nth-child(5) { animation-delay: 0.4s; }
+#animated-text span:nth-child(6) { animation-delay: 0.5s; }
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
 #flag {
     position: fixed;

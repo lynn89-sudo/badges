@@ -15,6 +15,7 @@ model Club {
   id   Int    @id @default(autoincrement())
   name  String
   link  String
+  verify Boolean
 }
 
 model Badge {

@@ -4,6 +4,7 @@
     //import icon from "$lib/assets/icon.svg";
     let icon = "";
     let icon_load = false;
+    let title_load = false;
 
     let nav_color = "#c7a7a7";
 
@@ -13,10 +14,11 @@
         .then(svg => {
             icon = svg;
             icon_load = true;
+            setTimeout(function() {
+                title_load = true;
+            }, 2000);
         })
     })
-
-    let name = "Badges";
 </script>
 
 <a href = "https://hackclub.com/"><img id="flag" src={flag} alt="orpheus holding a flag with hack club written on it" /></a>
@@ -24,4 +26,7 @@
     <div id="logo" class:loaded={icon_load}>
         {@html icon}
     </div>
-</div>
+    <h1 id="animated-text" class:loaded={title_load}>
+        <span>b</span><span>a</span><span>d</span><span>g</span><span>e</span><span>s</span>
+    </h1>
+</div>x
