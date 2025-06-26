@@ -1,0 +1,13 @@
+-- CreateTable
+CREATE TABLE "Club" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "link" TEXT NOT NULL
+);
+
+-- CreateTable
+CREATE TABLE "Badge" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "type" TEXT NOT NULL
+);
