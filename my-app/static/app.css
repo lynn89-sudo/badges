@@ -30,13 +30,34 @@
   }
 
 body {
-    background-color: rgb(160, 87, 87);
+    background-color: rgb(165, 65, 65);
     font-family: Phantom Sans, sans-serif;
     text-align: center;
+    color: rgb(255, 255, 255);
 }
 h1 {
     color: rgb(244, 244, 244);
     font-size: 100px;
+}
+h2 span {
+    background-color: rgb(93, 6, 6);
+    border-radius: 10px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+h2 span:hover {
+    box-shadow: 0px 0px 20px 10px rgba(175, 58, 72, 0.411);
+}
+h2.rotate {
+    transform: rotate(-0.5deg);
+}
+
+#bodycontent {
+    opacity: 0;
+}
+#bodycontent.load {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
 #animated-text span {
@@ -123,7 +144,7 @@ h1 {
     transition: box-shadow 0.3s ease-in-out;
 }
 #navbar:hover {
-    box-shadow: 0 35px 45px rgba(129, 14, 27, 0.411);
+    box-shadow: 0 35px 45px rgba(233, 230, 230, 0.211);
 }
 
 #logo svg {

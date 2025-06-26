@@ -1,0 +1,154 @@
+nohup: ignoring input
+
+> my-app@0.0.1 dev
+> vite dev
+
+5:49:01 PM [vite] (client) Forced re-optimization of dependencies
+Port 5173 is in use, trying another one...
+Port 5174 is in use, trying another one...
+Port 5175 is in use, trying another one...
+
+  VITE v6.3.5  ready in 765 ms
+
+  ➜  Local:   http://localhost:5176/
+  ➜  Network: use --host to expose
+6:01:21 PM [vite] (ssr) Error when evaluating SSR module /workspaces/badges/my-app/src/routes/api/clubs/+server.js: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+      at new PrismaClient (/workspaces/badges/my-app/node_modules/.prisma/client/default.js:43:11)
+      at /workspaces/badges/my-app/src/routes/api/clubs/+server.js:2:16
+      at async ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1062:5)
+      at async SSRCompatModuleRunner.dir6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+6:38:39 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/root.js
+6:38:39 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+6:57:15 PM [vite] .env changed, restarting server...
+6:57:15 PM [vite] (client) Forced re-optimization of dependencies
+6:57:15 PM [vite] server restarted.
+ page reload .svelte-kit/generated/client/app.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+6:38:39 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/root.js
+6:38:39 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+6:57:15 PM [vite] .env changed, restarting server...
+6:57:15 PM [vite] server restarted.
+c ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1062:5)
+    at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:61)
+    at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:23)
+    at async SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1180:76)
+    at async SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:12)
+    at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
+    at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
+    at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
+Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+    at new PrismaClient (/workspaces/badges/my-app/node_modules/.prisma/client/default.js:43:11)
+    at /workspaces/badges/my-app/src/routes/api/clubs/+server.js:2:16
+    at async ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1062:5)
+    at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:61)
+    at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:23)
+    at async SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1180:76)
+    at async SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:12)
+    at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
+    at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
+    at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
+Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+    at new PrismaClient (/workspaces/badges/my-app/node_modules/.prisma/client/default.js:43:11)
+    at /workspaces/badges/my-app/src/routes/api/clubs/+server.js:2:16
+    at async ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1062:5)
+    at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:61)
+    at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:23)
+    at async SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1180:76)
+    at async SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:12)
+    at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
+    at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
+    at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
+6:09:38 PM [vite] (ssr) page reload src/routes/api/clubs/+server.js
+6:10:28 PM [vite] (ssr) Error when evaluating SSR module /workspaces/badges/my-app/src/routes/api/clubs/+server.js: require is not defined
+      at /workspaces/badges/my-app/src/routes/api/clubs/+server.js:1:26
+      at ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1070:6)
+      at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:82)
+      at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:35)
+      at SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1179:28)
+      at SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:23)
+      at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
+      at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
+      at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
+      at async respond (/workspaces/badges/my-app/node_modules/@sveltejs/kit/src/runtime/server/respond.js:310:18)
+ReferenceError: require is not defined
+    at /workspaces/badges/my-app/src/routes/api/clubs/+server.js:1:26
+    at ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1070:6)
+    at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:82)
+    at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:35)
+    at SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1179:28)
+    at SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:23)
+    at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
+    at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
+    at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
+    at async respond (/workspaces/badges/my-app/node_modules/@sveltejs/kit/src/runtime/server/respond.js:310:18)
+ReferenceError: require is not defined
+    at /workspaces/badges/my-app/src/routes/api/clubs/+server.js:1:26
+    at ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1070:6)
+    at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:82)
+    at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:35)
+    at SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1179:28)
+    at SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:23)
+    at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
+    at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
+    at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
+    at async respond (/workspaces/badges/my-app/node_modules/@sveltejs/kit/src/runtime/server/respond.js:310:18)
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+6:38:39 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/root.js
+6:38:39 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+6:57:15 PM [vite] .env changed, restarting server...
+6:57:16 PM [vite] server restarted.
+7:45:54 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+7:45:58 PM [vite] (ssr) page reload src/routes/+page.server.js
+dModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1062:5)
+    at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:61)
+    at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:23)
+    at async SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1180:76)
+    at async SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:12)
+    at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
+    at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
+    at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
+6:09:38 PM [vite] (ssr) page reload src/routes/api/clubs/+server.js
+6:10:16 PM [vite] (ssr) Error when evaluating SSR module /workspaces/badges/my-app/src/routes/api/clubs/+server.js: require is not defined
+      at /workspaces/badges/my-app/src/routes/api/clubs/+server.js:1:26
+      at ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1070:6)
+      at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:82)
+      at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:35)
+      at SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1179:28)
+      at SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:23)
+      at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
+      at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
+      at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
+      at async respond (/workspaces/badges/my-app/node_modules/@sveltejs/kit/src/runtime/server/respond.js:310:18)
+ReferenceError: require is not defined
+    at /workspaces/badges/my-app/src/routes/api/clubs/+server.js:1:26
+    at ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1070:6)
+    at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:82)
+    at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:35)
+    at SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1179:28)
+    at SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:23)
+    at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
+    at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
+    at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
+    at async respond (/workspaces/badges/my-app/node_modules/@sveltejs/kit/src/runtime/server/respond.js:310:18)
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+6:38:39 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+6:38:39 PM [vite] (client) page reload .svelte-kit/generated/root.js
+6:38:39 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+6:57:15 PM [vite] .env changed, restarting server...
+6:57:15 PM [vite] (client) Forced re-optimization of dependencies
+6:57:15 PM [vite] server restarted.

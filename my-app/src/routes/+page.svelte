@@ -5,6 +5,7 @@
     let icon = "";
     let icon_load = false;
     let title_load = false;
+    let loadALL = false;
 
     let nav_color = "#c7a7a7";
 
@@ -16,8 +17,10 @@
             icon_load = true;
             setTimeout(function() {
                 title_load = true;
-            }, 2000);
-        })
+            }, 1000);
+            setTimeout(function() {
+                loadALL = true;}, 1800);
+            })
     })
 </script>
 
@@ -29,4 +32,7 @@
     <h1 id="animated-text" class:loaded={title_load}>
         <span>b</span><span>a</span><span>d</span><span>g</span><span>e</span><span>s</span>
     </h1>
+    <div id= "bodycontent" class:load={loadALL}>
+        <h2 class="rotate"><span>Celebrating and recognizing the achievements of Hack Clubs and their members</span></h2>
+    </div>
 </div>x
