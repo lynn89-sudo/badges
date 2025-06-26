@@ -24,6 +24,32 @@
                 loadALL = true;}, 1800);
             })
     })
+
+    let filter = "";
+    let clubList = "";
+
+    /*
+    if (data.clubs.length > 0) {
+        for (let i = 0; i < data.clubs.length; i++) {
+            let club = data.clubs[i];
+            if (club.name.toLowerCase().includes(filter.toLowerCase())) {
+                clubList += `<li><a href="${club.url}">${club.name}</a></li>`;
+            }
+        }
+    }
+    */
+
+    /*
+    {#if data.clubs.length > 0}
+    <ul>
+        {#each data.clubs as club}
+            
+        {/each}
+    </ul>
+    {:else}
+    <p>No clubs found.</p>
+    {/if}
+    */
 </script>
 
 <a href = "https://hackclub.com/"><img id="flag" src={flag} alt="orpheus holding a flag with hack club written on it" /></a>
@@ -38,15 +64,8 @@
     </h1>
     <div id= "bodycontent" class:load={loadALL}>
         <h2 class="rotate"><span>Celebrating and recognizing the achievements of Hack Clubs and their members</span></h2>
-    <br>
-
-    {#if data.clubs.length > 0}
-    <ul>
-        {#each data.clubs as club}
-            
-        {/each}
-    </ul>
-    {:else}
-    <p>No clubs found.</p>
-    {/if}
-</div>
+        <br>
+        <div>
+            {@html clubList}
+        </div>
+    </div>
