@@ -1,0 +1,29 @@
+#flag {
+    position: fixed;
+    margin: 0;
+    top: 0; 
+    left: 5px;
+    z-index: 1000;
+    width: 250px;
+    opacity: 1;
+    height: auto;
+    transform-origin: center;
+    transition: transform 1s;
+
+    
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+#flag:hover {
+    cursor: pointer;
+    opacity: 80%;
+    transform: rotate(-5deg);
+}
