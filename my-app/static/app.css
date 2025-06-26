@@ -1,21 +1,24 @@
+body {
+    background-color: rgb(160, 87, 87);
+}
+
 #flag {
     position: fixed;
     margin: 0;
     top: 0; 
-    left: 5px;
+    left: 25px;
     z-index: 1000;
-    width: 250px;
+    width: 150px;
     opacity: 1;
     height: auto;
     transform-origin: center;
     transition: transform 1s;
 
-    
+
     -webkit-user-drag: none;
     -moz-user-drag: none;
     -ms-user-drag: none;
     -o-user-drag: none;
-    user-drag: none;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -24,6 +27,38 @@
 }
 #flag:hover {
     cursor: pointer;
-    opacity: 80%;
-    transform: rotate(-5deg);
+    opacity: 90%;
+    transform: rotate(5deg);
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 20px 50px rgba(95, 50, 55, 80%);
+    transition: box-shadow 0.3s ease-in-out;
+}
+#navbar:hover {
+    box-shadow: 0 35px 45px rgba(129, 14, 27, 0.411);
+}
+
+#logo svg {
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    width: auto;
+}
+#logo {
+    transform: translateY(-40px);
+    opacity: 50%;
+    transition: opacity 1s, transform 0.6s ease-out;
+}
+#logo.loaded {
+    opacity: 1;
+    transform: translateY(0);
 }
