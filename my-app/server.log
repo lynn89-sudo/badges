@@ -110,45 +110,61 @@ ReferenceError: require is not defined
 6:57:16 PM [vite] server restarted.
 7:45:54 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
 7:45:58 PM [vite] (ssr) page reload src/routes/+page.server.js
-dModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1062:5)
-    at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:61)
-    at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:23)
-    at async SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1180:76)
-    at async SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:12)
-    at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
-    at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
-    at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
-6:09:38 PM [vite] (ssr) page reload src/routes/api/clubs/+server.js
-6:10:16 PM [vite] (ssr) Error when evaluating SSR module /workspaces/badges/my-app/src/routes/api/clubs/+server.js: require is not defined
-      at /workspaces/badges/my-app/src/routes/api/clubs/+server.js:1:26
-      at ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1070:6)
-      at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:82)
-      at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:35)
-      at SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1179:28)
-      at SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:23)
-      at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
-      at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
-      at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
-      at async respond (/workspaces/badges/my-app/node_modules/@sveltejs/kit/src/runtime/server/respond.js:310:18)
-ReferenceError: require is not defined
-    at /workspaces/badges/my-app/src/routes/api/clubs/+server.js:1:26
-    at ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1070:6)
-    at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:82)
-    at SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:35)
-    at SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1179:28)
-    at SSRCompatModuleRunner.import (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1117:23)
-    at async instantiateModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25231:12)
-    at async loud_ssr_load_module (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:70:11)
-    at async Object.endpoint (file:///workspaces/badges/my-app/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:283:18)
-    at async respond (/workspaces/badges/my-app/node_modules/@sveltejs/kit/src/runtime/server/respond.js:310:18)
-6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
-6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
-6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
-6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
-6:38:39 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
-6:38:39 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
-6:38:39 PM [vite] (client) page reload .svelte-kit/generated/root.js
-6:38:39 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
-6:57:15 PM [vite] .env changed, restarting server...
-6:57:15 PM [vite] (client) Forced re-optimization of dependencies
-6:57:15 PM [vite] server restarted.
+7:54:56 PM [vite] (ssr) page reload src/routes/+page.server.js
+7:54:58 PM [vite] (ssr) page reload src/routes/+page.server.js
+7:55:00 PM [vite] (ssr) page reload src/routes/+page.server.js
+7:55:05 PM [vite] (ssr) page reload src/routes/+page.server.js
+7:55:07 PM [vite] (ssr) page reload src/routes/+page.server.js
+8:01:18 PM [vite] (client) hmr update /src/routes/+page.svelte
+8:01:18 PM [vite] (ssr) page reload src/routes/+page.svelte
+8:02:21 PM [vite] (client) hmr update /src/routes/+page.svelte
+8:02:21 PM [vite] (ssr) page reload src/routes/+page.svelte
+8:02:23 PM [vite-plugin-svelte] src/routes/+page.svelte:26:15 Component has unused export property 'data'. If it is for external reference only, please consider using `export const data`
+https://svelte.dev/e/export_let_unused
+8:02:29 PM [vite] (client) hmr update /src/routes/+page.svelte
+8:02:29 PM [vite] (ssr) page reload src/routes/+page.svelte
+8:02:36 PM [vite] (client) hmr update /src/routes/+page.svelte
+8:02:36 PM [vite] (ssr) page reload src/routes/+page.svelte
+8:02:38 PM [vite-plugin-svelte] src/routes/+page.svelte:2:15 Component has unused export property 'data'. If it is for external reference only, please consider using `export const data`
+https://svelte.dev/e/export_let_unused
+8:03:13 PM [vite] (client) hmr update /src/routes/+page.svelte
+8:03:13 PM [vite] (ssr) page reload src/routes/+page.svelte
+8:03:17 PM [vite] (client) hmr update /src/routes/+page.svelte
+8:03:17 PM [vite] (ssr) page reload src/routes/+page.svelte
+8:03:27 PM [vite] (client) hmr update /src/routes/+page.svelte
+8:03:27 PM [vite] (ssr) page reload src/routes/+page.svelte
+8:03:43 PM [vite] (ssr) Error when evaluating SSR module /src/routes/+page.server.js: Failed to load url ../generated/prisma/client.js (resolved id: ../generated/prisma/client.js) in /workspaces/badges/my-app/src/lib/prisma.js. Does the file exist?
+      at loadAndTransform (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35725:17)
+Error: Failed to load url ../generated/prisma/client.js (resolved id: ../generated/prisma/client.js) in /workspaces/badges/my-app/src/lib/prisma.js. Does the file exist?
+    at loadAndTransform (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35725:17) {
+  code: 'ERR_LOAD_URL',
+  runnerError: Error: RunnerError
+      at reviveInvokeError (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:552:18)
+      at Object.invoke (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:635:15)
+      at async SSRCompatModuleRunner.getModuleInformation (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1205:73)
+      at async request (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1227:88)
+      at async eval (/workspaces/badges/my-app/src/lib/prisma.js:4:31)
+      at async ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1062:5)
+      at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:61)
+      at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:23)
+      at async SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1180:76)
+      at async eval (/workspaces/badges/my-app/src/routes/+page.server.js:4:31)
+}
+Not found: /favicon.ico
+8:03:44 PM [vite] (client) ✨ new dependencies optimized: devalue
+8:03:44 PM [vite] (client) ✨ optimized dependencies changed. reloading
+Error: Failed to load url ../generated/prisma/client.js (resolved id: ../generated/prisma/client.js) in /workspaces/badges/my-app/src/lib/prisma.js. Does the file exist?
+    at loadAndTransform (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35725:17) {
+  code: 'ERR_LOAD_URL',
+  runnerError: Error: RunnerError
+      at reviveInvokeError (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:552:18)
+      at Object.invoke (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:635:15)
+      at async SSRCompatModuleRunner.getModuleInformation (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1205:73)
+      at async request (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1227:88)
+      at async eval (/workspaces/badges/my-app/src/lib/prisma.js:4:31)
+      at async ESModulesEvaluator.runInlinedModule (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1062:5)
+      at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1284:61)
+      at async SSRCompatModuleRunner.directRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25274:23)
+      at async SSRCompatModuleRunner.cachedRequest (file:///workspaces/badges/my-app/node_modules/vite/dist/node/module-runner.js:1180:76)
+      at async eval (/workspaces/badges/my-app/src/routes/+page.server.js:4:31)
+}

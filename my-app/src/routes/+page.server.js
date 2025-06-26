@@ -1,8 +1,8 @@
 import prisma from '$lib/prisma.js';
 
 export async function load() {
-  const users = await prisma.user.findMany();
+  const clubs = await prisma.club.findMany();
   return {
-    users
+    clubs
   };
 }

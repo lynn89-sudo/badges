@@ -54,10 +54,15 @@ h2.rotate {
 
 #bodycontent {
     opacity: 0;
+    transform: translateY(40px);
 }
 #bodycontent.load {
     opacity: 1;
-    transition: opacity 1s ease-in-out;
+    transform: translateY(0);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+#spacing {
+    height: 100px;
 }
 
 #animated-text span {
@@ -77,6 +82,7 @@ h2.rotate {
 }
 #animated-text {
     opacity: 0;
+
 }
 #animated-text.loaded {
     cursor: pointer;
@@ -129,7 +135,7 @@ h2.rotate {
 #flag:hover {
     cursor: pointer;
     opacity: 90%;
-    transform: rotate(5deg);
+    transform: rotate(10deg);
 }
 
 #navbar {
@@ -144,7 +150,7 @@ h2.rotate {
     transition: box-shadow 0.3s ease-in-out;
 }
 #navbar:hover {
-    box-shadow: 0 35px 45px rgba(233, 230, 230, 0.211);
+    box-shadow: 0 35px 45px rgba(184, 181, 181, 0.211);
 }
 
 #logo svg {

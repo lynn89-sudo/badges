@@ -1,4 +1,6 @@
 <script>
+    export let data;
+    
     import flag from "$lib/assets/orpheus.svg";
     import { onMount } from "svelte";
     //import icon from "$lib/assets/icon.svg";
@@ -29,10 +31,22 @@
     <div id="logo" class:loaded={icon_load}>
         {@html icon}
     </div>
+</div>
+<div id="spacing"></div>
     <h1 id="animated-text" class:loaded={title_load}>
         <span>b</span><span>a</span><span>d</span><span>g</span><span>e</span><span>s</span>
     </h1>
     <div id= "bodycontent" class:load={loadALL}>
         <h2 class="rotate"><span>Celebrating and recognizing the achievements of Hack Clubs and their members</span></h2>
-    </div>
-</div>x
+    <br>
+
+    {#if data.clubs.length > 0}
+    <ul>
+        {#each data.clubs as club}
+            
+        {/each}
+    </ul>
+    {:else}
+    <p>No clubs found.</p>
+    {/if}
+</div>
