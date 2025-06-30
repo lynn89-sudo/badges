@@ -1,6 +1,4 @@
 <script>
-    export let data;
-    
     import flag from "$lib/assets/orpheus.svg";
     import { onMount } from "svelte";
     //import icon from "$lib/assets/icon.svg";
@@ -11,11 +9,15 @@
 
     let nav_color = "#c7a7a7";
 
+    function installSlack() {
+        window.location.href = "/slack/start";
+    }
+
     onMount(() => {
         fetch("https://icons.hackclub.com/api/icons/white/leaders")
         .then(response => response.text())
         .then(svg => {
-            icon = svg;
+            if (icon === "") {icon = svg;}
             icon_load = true;
             setTimeout(function() {
                 title_load = true;
@@ -66,6 +68,10 @@
         <h2 class="rotate"><span>Celebrating and recognizing the achievements of Hack Clubs and their members</span></h2>
         <br>
         <div>
-            {@html clubList}
+            <div><input placeholder = "Search Clubs..." id="searchbar" class="searchbar"/><button id="searchbutton" class="searchbutton"><span class="material-symbols-outlined">search</span></button></div>
+        </div>
+        <br><br><br>
+        <div id="signin">
+            <button onclick = "{ installSlack }"><span class="material-symbols-outlined">account_circle</span> Login</button>
         </div>
     </div>

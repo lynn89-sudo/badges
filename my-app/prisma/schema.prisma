@@ -16,7 +16,9 @@ datasource db {
 model Club {
   id        Int      @id @default(autoincrement())
   name      String?  
-  url       String?    
+  repo       String?   
+  slackId     String?  @unique
+  email       String?
 }
 
 model Badge {
